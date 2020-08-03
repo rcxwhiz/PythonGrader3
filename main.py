@@ -47,3 +47,5 @@ if __name__ == "__main__":
 	if student_src_zip == "":
 		print("Cancelled...")
 		sys.exit()
+
+	# TODO need to unzip the file
