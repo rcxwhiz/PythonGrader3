@@ -1,3 +1,6 @@
+import interact
+import sys
+
 """
 1) open a zip of student files
 - unzip the files and use regex to get names
@@ -35,4 +38,12 @@ def run_scripts(docker_wrap, scripts):
 
 
 if __name__ == "__main__":
-	print("test")
+	print("Python Grader 3")
+	print("Josh Bedwell 2020")
+	print("")
+
+	input("Press Enter to choose a zip file with student code")
+	student_src_zip = interact.getFile("Choose Student Code Zip", "Zip Files (*.zip)")
+	if student_src_zip == "":
+		print("Cancelled...")
+		sys.exit()
